@@ -1,4 +1,13 @@
+## 说明
 
+代码遵循MIT协议，请自部署到云服务器使用，支持vercel一键部署
+
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/rcy1314/jsd.cdn/)
+
+⚠️ 如果vercel流量不够请使用云服务器部署，配置文件在下方
+
+## 预览
 
 ![预览](https://jsd.cdn.noisework.cn/gh/rcy1314/tuchuang@main/uPic/1725080730151.png)
 
@@ -73,6 +82,3 @@ server {
 }
 ```
 
-## 注意
-
-代码遵循MIT协议，请自部署到云服务器使用
