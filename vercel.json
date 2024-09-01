@@ -6,29 +6,20 @@
       "dest": "/index.html"
     },
     {
-      "src": "/(.*)",
-      "dest": "https://cdn.jsdelivr.net/$1"
-    },
-    {
-      "src": "/JS/(.*)",
-      "dest": "/JS/$1"
+      "src": "/js/(.*)",
+      "dest": "/js/$1"
     },
     {
       "src": "/css/(.*)",
       "dest": "/css/$1"
-    }
-  ],
-  "env": {
-    "ASSET_PATH": "/static"
-  },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build"
     },
     {
-      "src": "static/**",
-      "use": "@now/static"
+      "src": "/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "https://cdn.jsdelivr.net/$1"
     }
   ]
 }
