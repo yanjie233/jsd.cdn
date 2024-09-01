@@ -1,7 +1,34 @@
 {
-    "version": 2,
-    "routes": [
-      {"src": "/","dest": "/index.html"},
-      {"src": "/(.*)","dest": "https://cdn.jsdelivr.net"}
-    ]
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "https://cdn.jsdelivr.net/$1"
+    }
+  ],
+  "env": {
+    "ASSET_PATH": "/static"
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    },
+    {
+      "src": "./js/**",
+      "use": "@now/static"
+    },
+    {
+      "src": "./img/**",
+      "use": "@now/static"
+    },
+    {
+      "src": "./css/**",
+      "use": "@now/static"
+    }
+  ]
 }
